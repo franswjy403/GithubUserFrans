@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Github Users App</string>
+    <string name="search">Search</string>
+    <string name="favorite">Favorite</string>
+    <string name="search_hint">Github Username</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="followers_count">%d Followers</string>
+    <string name="following_count">%d Following</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="default_search">user</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="setting">Setting</string>
+    <string name="splash_info">Github User App</string>
+</resources>

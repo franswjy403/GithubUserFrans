@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/githubUserList">
+    <fragment
+        android:id="@+id/githubUserList"
+        android:name="com.example.githubuser.ui.GithubUserList"
+        android:label="fragment_github_user_list"
+        tools:layout="@layout/fragment_github_user_list" >
+        <action
+            android:id="@+id/action_githubUserList_to_githubUserDetail"
+            app:destination="@id/githubUserDetail" />
+        <action
+            android:id="@+id/action_githubUserList_to_follow"
+            app:destination="@id/follow" />
+        <action
+            android:id="@+id/action_githubUserList_to_githubUserFavorite"
+            app:destination="@id/githubUserFavorite" />
+        <action
+            android:id="@+id/action_githubUserList_to_setting2"
+            app:destination="@id/setting2" />
+    </fragment>
+    <fragment
+        android:id="@+id/githubUserDetail"
+        android:name="com.example.githubuser.ui.GithubUserDetail"
+        android:label="fragment_github_user_detail"
+        tools:layout="@layout/fragment_github_user_detail" >
+        <argument
+            android:name="username"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/follow"
+        android:name="com.example.githubuser.ui.Follow"
+        android:label="fragment_follow"
+        tools:layout="@layout/fragment_follow" >
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_follow_to_githubUserDetail"
+            app:destination="@id/githubUserDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/githubUserFavorite"
+        android:name="com.example.githubuser.ui.GithubUserFavorite"
+        android:label="GithubUserFavorite" >
+        <action
+            android:id="@+id/action_githubUserFavorite_to_githubUserDetail"
+            app:destination="@id/githubUserDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/setting2"
+        android:name="com.example.githubuser.ui.Setting"
+        android:label="Setting" />
+
+</navigation>
