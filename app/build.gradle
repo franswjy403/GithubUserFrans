@@ -24,10 +24,8 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField("String", "GITHUB_KEY", "\"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\"")
         }
         debug {
-            buildConfigField("String", "GITHUB_KEY", "\"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\"")
         }
     }
     compileOptions {
